@@ -1,2 +1,2 @@
-test1: test.cpp
-	g++ -o test1  test.cpp
+test1: test.cpp common.cpp common.h
+	g++ -Wall -o test1  test.cpp common.cpp
