@@ -62,6 +62,11 @@ typedef struct {
 
     
 
+void processMonster( Monster m ) {
+    m.name;
+    m.health
+
+
     
 
 int main( int numArgs, char *args[] ) {
@@ -71,7 +76,11 @@ int main( int numArgs, char *args[] ) {
     
     Monster jason;
 
+    jason.health = 10;
+    jason.ammo = 25;
+    
 
+    processMonster( jason )
     char b = 'A';
     
     printf( "My letter is %d\n", (int)b );
