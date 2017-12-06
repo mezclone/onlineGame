@@ -49,10 +49,50 @@ int addAll( int count, int *a ) {
 
 
 
+typedef int number;
+
+
+typedef struct {
+        char *name;
+        int xPos;
+        int yPos;
+        int health;
+        int ammo;
+    } Monster;
+
+    
+
     
 
 int main( int numArgs, char *args[] ) {
 //int main( ) {
+    
+    number xx = 1;
+    
+    Monster jason;
+
+
+    char b = 'A';
+    
+    printf( "My letter is %d\n", (int)b );
+    int i = 0;
+    
+    while(  i < numArgs )  {
+        char *arg = args[ i];
+        int j = 0;
+        
+        while( false && arg[j] != '\0'){
+            arg[j] = arg[j] + 1;
+            j = j + 1;
+            }
+        
+        printf( "the %dth arg is %s, the first char is %c\n", 
+                i, arg, arg[0] );
+        
+        
+        i = i + 1;
+        }
+    
     int a[5];
 
     int x = 5;
